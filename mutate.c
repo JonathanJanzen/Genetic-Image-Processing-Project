@@ -18,9 +18,9 @@ void mutate(Individual *individual, double rate)
     for (j = 0; j < 3; j++) {
       int randColour = rand();
       randColour = rand() % (individual->image.max_color + 1);
-      if (j = 0) individual->image.data[pixelNum].r = randColour;
-      if (j = 1) individual->image.data[pixelNum].g = randColour;
-      if (j = 2) individual->image.data[pixelNum].b = randColour;
+      if (j == 0) individual->image.data[pixelNum].r = randColour;
+      if (j == 1) individual->image.data[pixelNum].g = randColour;
+      if (j == 2) individual->image.data[pixelNum].b = randColour;
     }
   }
 }
